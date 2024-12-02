@@ -79,7 +79,11 @@ a {
     font-weight: bold;
 }
 
-
+/** to add a little space between items **/
+.nav-item{
+    margin-right: 35px;
+    
+}
 
 
 
