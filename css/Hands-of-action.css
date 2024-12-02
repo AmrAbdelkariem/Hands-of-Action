@@ -1,4 +1,4 @@
-/* general style */
+/* general style---------------------*/
 :root {
     --navy: #063455;
     --green: #2E8B57;
@@ -29,7 +29,7 @@ a {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    padding: 10px 10px;
+    padding: 10 10;
 }
 
 .strong-message:hover {
@@ -44,7 +44,7 @@ a {
 
 }
 
-/* removing unnessesary bootstrap styles */
+/* removing unnecessary bootstrap styles */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .strong-message:focus,
@@ -62,7 +62,7 @@ a {
 .dropdown-item:active,
 .dropdown-item:focus,
 .nav-link:focus {
-    background-color: var(--light-gray);
+    background-color: white;
     color: var(--green);
 }
 
@@ -83,8 +83,44 @@ a {
 /** to add a little space between items **/
 .nav-item{
     margin-right: 35px;
-    
 }
 
+/* green animated under-line */
+.under-line{
+    width: fit-content;
+    position: relative;
+}
+.under-line::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--green);
+    margin: 26 auto;
+    width: 0%;
+    height: 2.5px;
+    transition: 0.4s;
+}
 
+.nav-link:hover .under-line::before, .nav-link:focus .under-line::before {
+    width: 100%;
+}
+
+/* footer------------------*/
+footer {
+    background-color: var(--navy);
+}
+
+.footer-element {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-sub-list {
+    margin-left: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-element:hover, .footer-sub-list:hover {
+    color: var(--light-gray);
+}
 
