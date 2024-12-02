@@ -29,6 +29,7 @@ a {
     color: white;
     font-weight: bold;
     font-size: 14px;
+    padding: 10px 10px;
 }
 
 .strong-message:hover {
