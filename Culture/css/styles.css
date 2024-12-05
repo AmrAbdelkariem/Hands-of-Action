@@ -153,6 +153,13 @@ footer {
     padding-top: 20px;
 }
 
+.header10{
+    color: #063455;
+    font-weight: bold;
+    font-size: 23px;
+    padding-top: 10px;
+}
+
 
 /* Paragraph styles */
 .paragraph1, .paragraph2, .paragraph3, .paragraph4, .paragraph5, .paragraph6, .paragraph7 ,.paragraph7,.paragraph8,.paragraph9 {
