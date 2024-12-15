@@ -60,14 +60,20 @@
 
 
     <main class="flex-fill bg-light d-flex ">
+
+
+
         <div class="container text-center mt-5">
             <h1 class="display-1 text-danger">404</h1>
             <h2 class="mb-4 dark-txt">Page Not Found</h2>
             <p class="lead mb-4">
                 Sorry, the page you are looking for doesn’t exist or has been moved.
             </p>
-            <a href="#" class="btn btn-primary btn-lg main-btn">Go Back to Home</a>
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg main-btn" id="goBackBtn">Go Back to Home</a>
+
         </div>
+
+
     </main>
 
 
@@ -119,6 +125,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('goBackBtn').addEventListener('click', function() {
+            window.location.href = '/';
+        });
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
 </body>
