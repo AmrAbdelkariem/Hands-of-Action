@@ -214,3 +214,11 @@ ul li::marker {
 .concluding-message a:hover {
     color: var(--orange);
 }
+
+.ClickableLinks{
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
