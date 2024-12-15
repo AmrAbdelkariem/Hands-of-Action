@@ -1,3 +1,262 @@
+/* General styles --------------------- */
+:root {
+    --navy: #063455;
+    --green: #2E8B57;
+    --orange: #EF6800;
+    --dark-orange: #d45c00;
+    --coffee: #A68A64;
+    --cream-coffee: #F0E2D0;
+    --light-gray: #F1F1F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar ------------------ */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    height: 62px;
+}
+
+.navbar-toggler {
+    color: var(--navy);
+    font-size: large;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-item {
+    margin-right: 35px;
+}
+
+.nav-link.dropdown-toggle::after {
+    content: none;
+}
+
+.nav-link:hover,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.nav-link:focus {
+    background-color: white;
+    color: var(--green);
+}
+
+.dark-txt {
+    color: var(--navy);
+}
+
+.under-line {
+    width: fit-content;
+    position: relative;
+}
+
+.under-line::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--green);
+    margin-top: 26px;
+    width: 0%;
+    height: 2.5px;
+    transition: 0.4s;
+}
+
+.nav-link:hover .under-line::before, 
+.nav-link:focus .under-line::before {
+    width: 100%;
+}
+
+/* Button styles ------------------ */
+.strong-message {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.strong-message:hover {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.strong-message:focus,
+.strong-message:active,
+.strong-message:hover {
+    box-shadow: none;
+}
+
+/* Footer styles ------------------ */
+footer {
+    background-color: var(--navy);
+}
+
+.footer-element {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-sub-list {
+    margin-left: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-element:hover, 
+.footer-sub-list:hover {
+    color: var(--light-gray);
+}
+
+.logofooter {
+    height: 90px;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.slogan {
+    font-size: 15px;
+    font-style: bold;
+}
+
+/* Article styles ------------------ */
+.cover-container {
+    background-image: var(--bg-image);
+    background-color: var(--light-gray);
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.custom-container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.article-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.header1 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 36px;
+}
+
+.sub-header {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 18px;
+}
+
+.sub-header2 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+ul li::marker {
+    color: var(--navy);
+}
+
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.concluding-message {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.concluding-message a {
+    color: var(--orange);
+}
+
+.concluding-message a:hover {
+    color: var(--navy);
+}
+
+/* About us styles ------------------ */
+.about-us-container {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.about-us-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.team-member {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member-img {
+    border: 4px solid #063455;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: #063455;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.team-member a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.team-member a:hover {
+    color: #063455;
+    text-decoration: underline;
+}
+
+
 /* General style--------------------- */
 :root {
     --navy: #063455;
@@ -213,4 +472,1228 @@ ul li::marker {
 
 .concluding-message a:hover {
     color: var(--orange);
+}
+
+/* General style--------------------- */
+:root {
+    --navy: #063455;
+    --green: #2E8B57;
+    --orange: #EF6800;
+    --dark-orange: #d45c00;
+    --coffee: #A68A64;
+    --cream-coffee: #F0E2D0;
+    --light-gray: #F1F1F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar------------------ */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 1px 15px 1px rgb(0, 0, 0, .1);
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    height: 62px;
+}
+
+/* Orange buttons that carry a strong message style */
+.strong-message {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.strong-message:hover {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* Removing unnecessary Bootstrap styles */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    box-shadow: none;
+}
+
+.nav-link.dropdown-toggle::after {
+    content: none;
+}
+
+/* Editing navigation bar Bootstrap styles */
+.nav-link:hover,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.nav-link:focus {
+    background-color: white;
+    color: var(--green);
+}
+
+/* Color of menu icon and text */
+.dark-txt,
+.navbar-toggler {
+    color: var(--navy);
+}
+
+.navbar-toggler {
+    font-size: large;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16;
+}
+
+/* Adding a little space between items */
+.nav-item {
+    margin-right: 35px;
+}
+
+/* Green animated underline */
+.under-line {
+    width: fit-content;
+    position: relative;
+}
+
+.under-line::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--green);
+    margin-top: 26px;
+    width: 0%;
+    height: 2.5px;
+    transition: 0.4s;
+}
+
+.nav-link:hover .under-line::before, 
+.nav-link:focus .under-line::before {
+    width: 100%;
+}
+
+/* Footer------------------ */
+footer {
+    background-color: var(--navy);
+}
+
+.footer-element {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-sub-list {
+    margin-left: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-element:hover, 
+.footer-sub-list:hover {
+    color: var(--light-gray);
+}
+
+/* Article------------------ */
+
+/* Cover styles */
+.cover-container {
+    background-image: var(--bg-image); /* The image used as a cover is passed as a variable from <html style=""> */
+    background-color: var(--light-gray);
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* Custom container */
+.custom-container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* Image styles */
+.article-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+/* Header styles */
+.header1 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 36px;
+}
+
+.sub-header {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 18px;
+}
+
+.sub-header2 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+ul li::marker {
+    color: var(--navy);
+}
+
+/* Paragraph styles */
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.concluding-message {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.concluding-message a {
+    color: var(--navy);
+}
+
+.concluding-message a:hover {
+    color: var(--orange);
+}
+
+/* General style--------------------- */
+:root {
+    --navy: #063455;
+    --green: #2E8B57;
+    --orange: #EF6800;
+    --dark-orange: #d45c00;
+    --coffee: #A68A64;
+    --cream-coffee: #F0E2D0;
+    --light-gray: #F1F1F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar------------------ */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 1px 15px 1px rgb(0, 0, 0, .1);
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    height: 62px;
+}
+
+/* Orange buttons that carry a strong message style */
+.strong-message {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.strong-message:hover {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* Removing unnecessary Bootstrap styles */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    box-shadow: none;
+}
+
+.nav-link.dropdown-toggle::after {
+    content: none;
+}
+
+/* Editing navigation bar Bootstrap styles */
+.nav-link:hover,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.nav-link:focus {
+    background-color: white;
+    color: var(--green);
+}
+
+/* Color of menu icon and text */
+.dark-txt,
+.navbar-toggler {
+    color: var(--navy);
+}
+
+.navbar-toggler {
+    font-size: large;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16;
+}
+
+/* Adding a little space between items */
+.nav-item {
+    margin-right: 35px;
+}
+
+/* Green animated underline */
+.under-line {
+    width: fit-content;
+    position: relative;
+}
+
+.under-line::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--green);
+    margin-top: 26px;
+    width: 0%;
+    height: 2.5px;
+    transition: 0.4s;
+}
+
+.nav-link:hover .under-line::before, 
+.nav-link:focus .under-line::before {
+    width: 100%;
+}
+
+/* Footer------------------ */
+footer {
+    background-color: var(--navy);
+}
+
+.footer-element {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-sub-list {
+    margin-left: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-element:hover, 
+.footer-sub-list:hover {
+    color: var(--light-gray);
+}
+
+/* Article------------------ */
+
+/* Cover styles */
+.cover-container {
+    background-image: var(--bg-image); /* The image used as a cover is passed as a variable from <html style=""> */
+    background-color: var(--light-gray);
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* Custom container */
+.custom-container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* Image styles */
+.article-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+/* Header styles */
+.header1 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 36px;
+}
+
+.sub-header {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 18px;
+}
+
+.sub-header2 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+ul li::marker {
+    color: var(--navy);
+}
+
+/* Paragraph styles */
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.concluding-message {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.concluding-message a {
+    color: var(--navy);
+}
+
+.concluding-message a:hover {
+    color: var(--orange);
+}
+
+
+
+/* General style--------------------- */
+:root {
+    --navy: #063455;
+    --green: #2E8B57;
+    --orange: #EF6800;
+    --dark-orange: #d45c00;
+    --coffee: #A68A64;
+    --cream-coffee: #F0E2D0;
+    --light-gray: #F1F1F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar------------------ */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 1px 15px 1px rgb(0, 0, 0, .1);
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    height: 62px;
+}
+
+/* Orange buttons that carry a strong message style */
+.strong-message {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.strong-message:hover {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* Removing unnecessary Bootstrap styles */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    box-shadow: none;
+}
+
+.nav-link.dropdown-toggle::after {
+    content: none;
+}
+
+/* Editing navigation bar Bootstrap styles */
+.nav-link:hover,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.nav-link:focus {
+    background-color: white;
+    color: var(--green);
+}
+
+/* Color of menu icon and text */
+.dark-txt,
+.navbar-toggler {
+    color: var(--navy);
+}
+
+.navbar-toggler {
+    font-size: large;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16;
+}
+
+/* Adding a little space between items */
+.nav-item {
+    margin-right: 35px;
+}
+
+/* Green animated underline */
+.under-line {
+    width: fit-content;
+    position: relative;
+}
+
+.under-line::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--green);
+    margin-top: 26px;
+    width: 0%;
+    height: 2.5px;
+    transition: 0.4s;
+}
+
+.nav-link:hover .under-line::before, 
+.nav-link:focus .under-line::before {
+    width: 100%;
+}
+
+/* Footer------------------ */
+footer {
+    background-color: var(--navy);
+}
+
+.footer-element {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-sub-list {
+    margin-left: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-element:hover, 
+.footer-sub-list:hover {
+    color: var(--light-gray);
+}
+
+/* Article------------------ */
+
+/* Cover styles */
+.cover-container {
+    position: relative;
+    overflow: hidden;
+    background-image: var(--bg-image); /* The image used as a cover is passed as a variable from <html style=""> */
+    background-color: var(--navy);
+    height: 500px; 
+    width: auto;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    align-content: center;
+}
+
+.wheel-container {
+    align-content: center;
+    aspect-ratio: 1/1;
+    position: relative;
+    max-width: 400;
+    max-height: min-content;
+    justify-content: center;
+    align-content: center;
+}
+
+.sdgs-wheel {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-height: fit-content;
+    max-width: 375px;
+    animation-name: spin;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+.sdgs-cover-container {
+    margin-right: 0px;
+    margin-left: 0px;
+    height: inherit;
+}
+
+.cover-title-container {
+    justify-content: center;
+    align-content: center;
+}
+
+.header-light {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: .9em;
+    text-shadow: 0px 0px 20px #000000c4;
+}
+
+/* Custom container */
+.custom-container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* Image styles */
+.article-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+/* Header styles */
+.header1 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 36px;
+}
+
+.sub-header {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 18px;
+}
+
+.sub-header2 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+ul li::marker {
+    color: var(--navy);
+}
+
+/* Paragraph styles */
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.concluding-message {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.concluding-message a {
+    color: var(--navy);
+}
+
+.concluding-message a:hover {
+    color: var(--orange);
+}
+
+/* General style--------------------- */
+:root {
+    --navy: #063455;
+    --green: #2E8B57;
+    --orange: #EF6800;
+    --dark-orange: #d45c00;
+    --coffee: #A68A64;
+    --cream-coffee: #F0E2D0;
+    --light-gray: #F1F1F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar------------------ */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 1px 15px 1px rgb(0, 0, 0, .1);
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    height: 62px;
+}
+
+/* Orange buttons that carry a strong message style */
+.strong-message {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.strong-message:hover {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* Removing unnecessary Bootstrap styles */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    box-shadow: none;
+}
+
+.nav-link.dropdown-toggle::after {
+    content: none;
+}
+
+/* Editing navigation bar Bootstrap styles */
+.nav-link:hover,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.nav-link:focus {
+    background-color: white;
+    color: var(--green);
+}
+
+/* Color of menu icon and text */
+.dark-txt,
+.navbar-toggler {
+    color: var(--navy);
+}
+
+.navbar-toggler {
+    font-size: large;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16;
+}
+
+/* Adding a little space between items */
+.nav-item {
+    margin-right: 35px;
+}
+
+/* Green animated underline */
+.under-line {
+    width: fit-content;
+    position: relative;
+}
+
+.under-line::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--green);
+    margin-top: 26px;
+    width: 0%;
+    height: 2.5px;
+    transition: 0.4s;
+}
+
+.nav-link:hover .under-line::before, 
+.nav-link:focus .under-line::before {
+    width: 100%;
+}
+
+/* Footer------------------ */
+footer {
+    background-color: var(--navy);
+}
+
+.footer-element {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-sub-list {
+    margin-left: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-element:hover, 
+.footer-sub-list:hover {
+    color: var(--light-gray);
+}
+
+.logofooter{
+    height: 90px;
+    margin-top: 25px;
+    margin-right: 50px;
+
+}
+.slogan {
+    font-size: 15px;
+    font-style: bold;
+    
+  }
+
+
+/* Article------------------ */
+
+/* Cover styles */
+.cover-container {
+    background-image: var(--bg-image); /* The image used as a cover is passed as a variable from <html style=""> */
+    background-color: var(--light-gray);
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* Custom container */
+.custom-container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* Image styles */
+.article-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+/* Header styles */
+.header1 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 30.8px;
+    padding-top: 36px;
+   
+}
+
+.sub-header {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 18px;
+}
+
+
+
+.sub-header2 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+ul li::marker {
+    color: var(--navy);
+}
+
+/* Paragraph styles */
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.concluding-message {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.concluding-message a {
+    color: var(--orange);
+}
+
+.concluding-message a:hover {
+    color: var(--navy);
+}
+
+.ClickableLinks{
+    color: #023d67;
+}
+
+
+.Volunteer-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.concluding-paragraph{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* General style--------------------- */
+:root {
+    --navy: #063455;
+    --green: #2E8B57;
+    --orange: #EF6800;
+    --dark-orange: #d45c00;
+    --coffee: #A68A64;
+    --cream-coffee: #F0E2D0;
+    --light-gray: #F1F1F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar------------------ */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 1px 15px 1px rgb(0, 0, 0, .1);
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    height: 62px;
+}
+
+/* Orange buttons that carry a strong message style */
+.strong-message {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.strong-message:hover {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* Removing unnecessary Bootstrap styles */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.strong-message:focus,
+.strong-message:active .strong-message:hover {
+    box-shadow: none;
+}
+
+.nav-link.dropdown-toggle::after {
+    content: none;
+}
+
+/* Editing navigation bar Bootstrap styles */
+.nav-link:hover,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.nav-link:focus {
+    background-color: white;
+    color: var(--green);
+}
+
+/* Color of menu icon and text */
+.dark-txt,
+.navbar-toggler {
+    color: var(--navy);
+}
+
+.navbar-toggler {
+    font-size: large;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16;
+}
+
+/* Adding a little space between items */
+.nav-item {
+    margin-right: 35px;
+}
+
+/* Green animated underline */
+.under-line {
+    width: fit-content;
+    position: relative;
+}
+
+.under-line::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--green);
+    margin-top: 26px;
+    width: 0%;
+    height: 2.5px;
+    transition: 0.4s;
+}
+
+.nav-link:hover .under-line::before, 
+.nav-link:focus .under-line::before {
+    width: 100%;
+}
+
+/* Footer------------------ */
+footer {
+    background-color: var(--navy);
+}
+
+.footer-element {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-sub-list {
+    margin-left: 3px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-element:hover, 
+.footer-sub-list:hover {
+    color: var(--light-gray);
+}
+
+.logofooter{
+    height: 90px;
+    margin-top: 25px;
+    margin-right: 50px;
+
+}
+.slogan {
+    font-size: 15px;
+    font-style: bold;
+    
+  }
+
+
+/* Article------------------ */
+
+/* Cover styles */
+.cover-container {
+    background-image: var(--bg-image); /* The image used as a cover is passed as a variable from <html style=""> */
+    background-color: var(--light-gray);
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* Custom container */
+.custom-container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* Image styles */
+.article-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+/* Header styles */
+.header1 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 30.8px;
+    padding-top: 36px;
+   
+}
+
+.sub-header {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 18px;
+}
+
+
+
+.sub-header2 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+ul li::marker {
+    color: var(--navy);
+}
+
+/* Paragraph styles */
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.concluding-message {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.concluding-message a {
+    color: var(--orange);
+}
+
+.concluding-message a:hover {
+    color: var(--navy);
+}
+
+.ClickableLinks{
+    color: #023d67;
+}
+
+
+.Volunteer-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.concluding-paragraph{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    color: var(--navy);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
