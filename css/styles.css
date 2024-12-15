@@ -201,7 +201,7 @@ ul li::marker {
 .concluding-message {
     font-weight: bold;
     font-size: 28px;
-    text-align: center;
+    text-align: left;
     color: var(--navy);
     margin-top: 40px;
     margin-bottom: 40px;
