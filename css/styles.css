@@ -208,11 +208,11 @@ ul li::marker {
 }
 
 .concluding-message a {
-    color: var(--navy);
+    color: var(--orange);
 }
 
 .concluding-message a:hover {
-    color: var(--orange);
+    color: var(--navy);
 }
 
 .ClickableLinks{
