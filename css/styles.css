@@ -153,7 +153,7 @@ footer {
 }
 
 /* Image styles */
-.articale-image {
+.article-image {
     height: auto;
     max-width: 100%;
     padding-top: 20px;
@@ -177,14 +177,13 @@ footer {
     font-size: 28px;
     padding-top: 18px;
 }
+
 .sub-header2 {
     color: var(--navy);
     font-weight: bold;
-    font-size:28px;
-    padding-top: 18px
+    font-size: 24px;
+    padding-top: 10px;
 }
-
-
 
 ul li::marker {
     color: var(--navy);
@@ -209,9 +208,17 @@ ul li::marker {
 }
 
 .concluding-message a {
-    color: var(--navy);
+    color: var(--orange);
 }
 
 .concluding-message a:hover {
-    color: var(--orange);
+    color: var(--navy);
+}
+
+.ClickableLinks{
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
 }
