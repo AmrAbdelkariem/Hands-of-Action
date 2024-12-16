@@ -153,7 +153,7 @@ footer {
 }
 
 /* Image styles */
-.article-image {
+.articale-image {
     height: auto;
     max-width: 100%;
     padding-top: 20px;
@@ -177,13 +177,14 @@ footer {
     font-size: 28px;
     padding-top: 18px;
 }
-
 .sub-header2 {
     color: var(--navy);
     font-weight: bold;
-    font-size: 24px;
-    padding-top: 10px;
+    font-size:28px;
+    padding-top: 18px
 }
+
+
 
 ul li::marker {
     color: var(--navy);
