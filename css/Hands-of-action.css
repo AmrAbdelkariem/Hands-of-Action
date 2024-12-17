@@ -33,8 +33,11 @@ a {
     background-color: var(--orange);
     color: white;
     font-weight: bold;
-    font-size: 14px;
     padding: 10px 10px;
+}
+
+.navbar .strong-message {
+    font-size: 14px;
 }
 
 .strong-message:hover {
@@ -43,7 +46,11 @@ a {
 }
 
 .strong-message:focus,
-.strong-message:active .strong-message:hover {
+.strong-message:active,
+.strong-message:hover,
+.green-button:focus,
+.green-button:hover,
+.green-button:active {
     color: white;
     font-weight: bold;
 }
@@ -52,7 +59,11 @@ a {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .strong-message:focus,
-.strong-message:active .strong-message:hover {
+.strong-message:active,
+.strong-message:hover,
+.green-button:focus,
+.green-button:hover,
+.green-button:active {
     box-shadow: none;
 }
 
@@ -110,15 +121,189 @@ a {
 .nav-link:focus .under-line::before {
     width: 100%;
 }
+/* cover------------------*/
+.cover-image {
+    height: auto;
+    max-width: 100%;
+
+}
+
+.cover-image-container {
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    background-image: var(--bg-image); /* The image used as a cover is passed as a variable from <html style=""> */
+    background-color: var(--navy);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    align-content: center;
+}
+
+.header1 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 36px;
+}
+
+.home-header3 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+
+
+.home-cover {
+    height: 500px;
+}
+
+.custom-container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.home-paragraph {
+    color: var(--navy);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+}
+
+.home-line {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+    text-align: center;
+}
+
+.header2 {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.green-button {
+    background-color: var(--green);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-left: calc(50% - 99.28px);
+}
+
+video {
+    height: auto;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+
+.essay-image-container {
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 500px;
+    height: auto;
+    display: block;
+    background-image: var(--bg-image);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    align-content: center;
+}
+
+
+.article-paragraph {
+    color: var(--navy);
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.41176;
+    margin-top: 10px; 
+    margin-bottom: 0;
+}
+
+.essay-container {
+    background-color: var(--cream-coffee);
+    border-radius: 20px;
+    padding: 16px 26px 10px;
+}
+
+
+/* quotes----------------*/
+.quotes {
+}
+.quote-container {
+    margin-bottom: 20px;
+}
+.person-image {
+    background-image: var(--bg-image);
+    background-color: var(--green);
+    height: 6vw;
+    min-height: 90px;
+    border-radius: 50% ;
+    aspect-ratio: 1/1;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    align-content: center;
+}
+.text-container {
+    background-color: var(--cream-coffee);
+    border-radius: 25px;
+    padding: 11px 21px 5px;
+}
+
+.quote-name {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    color: var(--navy);
+}
+
+.take-action-container {
+    align-content: center;
+}
+
+.take-action-container .strong-message {
+    font-size: 20px;
+    margin-left: calc(50% - 79.625px);
+}
 
 /* footer------------------*/
 footer {
     background-color: var(--navy);
 }
 
+footer .logo {
+    height: 80px;
+}
+
 .footer-element {
     color: white;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .footer-sub-list {
