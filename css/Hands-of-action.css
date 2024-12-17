@@ -67,6 +67,10 @@ a {
     box-shadow: none;
 }
 
+.green-button:hover {
+    background-color: #267247;
+}
+
 .nav-link.dropdown-toggle::after {
     content: none;
 }

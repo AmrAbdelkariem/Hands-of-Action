@@ -253,13 +253,13 @@ ul li::marker {
   }
   
   .team-member a {
-    color: #0056b3;
+    color: var(--navy);
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .team-member a:hover {
-    color: #063455;
+    color: var(--orange);
     text-decoration: underline;
   }
   

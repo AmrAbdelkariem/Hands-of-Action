@@ -136,12 +136,68 @@ footer {
 
 /* Cover styles */
 .cover-container {
+    position: relative;
+    overflow: hidden;
     background-image: var(--bg-image); /* The image used as a cover is passed as a variable from <html style=""> */
-    background-color: var(--light-gray);
+    background-color: var(--navy);
     height: 500px; 
+    width: auto;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
+    align-content: center;
+}
+
+.wheel-container {
+    align-content: center;
+    aspect-ratio: 1/1;
+    position: relative;
+    max-width: 400;
+    max-height: min-content;
+    justify-content: center;
+    align-content: center;
+}
+
+.sdgs-wheel {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-height: fit-content;
+    max-width: 375px;
+    animation-name: spin;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+.sdgs-cover-container {
+    margin-right: 0px;
+    margin-left: 0px;
+    height: inherit;
+}
+
+.cover-title-container {
+    justify-content: center;
+    align-content: center;
+}
+
+.header-light {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: .9em;
+    text-shadow: 0px 0px 20px #000000c4;
 }
 
 /* Custom container */
@@ -212,13 +268,12 @@ ul li::marker {
 }
 
 .concluding-message a:hover {
-    color: var(--navy);
+    color: var(--dark-orange);
 }
 
 .ClickableLinks{
     color: var(--navy);
-    text-align: left;
-    font-size: 22px;
-    line-height: 1.41176;
-    margin-top: 10px; 
+}
+.ClickableLinks:hover {
+    color: var(--green);
 }
